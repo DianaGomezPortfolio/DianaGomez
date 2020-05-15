@@ -56,7 +56,6 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   z-index: 997;
   overflow-y: auto;
-  color:#ffff;
 }
 
 #header * {
@@ -69,19 +68,19 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   line-height: 1;
   font-weight: 700;
-  color:#000000;
+  color:#fff;
   font-family: "Satisfy", serif;
 }
 
 #header h1 a, #header h1 a:hover {
-  color:#000000;
+  color:#fff;
   line-height: 1;
   display: inline-block;
-  font-family: "Satisfy", serif;
+  font-family: "Satisfy", serif; /* TITLE*/
 }
 
 #header h2 {
-  color:#000000;
+  color:#fff;
   margin-top: 20px;
   margin-bottom: 50px;
   font-size: 13px;
@@ -91,7 +90,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header h2 span {
-  color:#000000;
   border-bottom: 2px solid #3E78B2; /* SUBTITLE BAR HOME*/
   padding-bottom: 6px;
   text-transform: uppercase;
@@ -129,10 +127,12 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 992px) {
   #header h1 {
     font-size: 50px;
+	  color:#000;
   }
   #header h2 {
     font-size: 15px;
     line-height: 30px;
+	color:#000;
   }
   #header .social-links {
     margin-top: 15px;
@@ -159,22 +159,22 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   list-style: none;
-  color:#000000;
+  color:#000;
 }
 
 .nav-menu li + li {
   margin-left: 30px;
-  color:#000000;
+  color:#000;
 }
 
 .nav-menu a {
   display: block;
   position: relative;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0,0,0,0.9);
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  color:#000;
+  color:#25588A; /*MENU NOT ACTIVE*/
 }
 
 .nav-menu a:before {
@@ -196,7 +196,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color:#000000; /* CURRENT WINDOW*/
+  color:#25588A; /* CURRENT WINDOW*/
   text-decoration: none;
 }
 
@@ -300,6 +300,7 @@ h1, h2, h3, h4, h5, h6 {
 #header.header-top h1 {
   margin-right: auto;
   font-size: 36px;
+  color: #000;  /* TITLE IN HEADER*/
 }
 
 #header.header-top .container {
@@ -309,6 +310,10 @@ h1, h2, h3, h4, h5, h6 {
 
 #header.header-top .nav-menu {
   margin: 0;
+}
+
+#header.header-top .nav-menu a:hover>a{
+  color:#000
 }
 
 @media (max-width: 768px) {
