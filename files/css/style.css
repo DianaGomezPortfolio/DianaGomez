@@ -125,15 +125,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 992px) {
-  #header h1 {
+ #header h1 {
     font-size: 50px;
-	  color:#000;
+	  color:#25588A;
   }
-  #header h2 {
-    font-size: 15px;
+ #header h2 {
+    font-size: 10px;
     line-height: 30px;
-	color:#000;
+	color:#25588A;
+	justify-content: center;
   }
+
+    #header h2 span {
+	  border-bottom: 2px solid #29ABE2; /* SUBTITLE BAR HOME MEDIA*/
+	}
+	
   #header .social-links {
     margin-top: 15px;
   }
@@ -217,7 +223,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #25588A; 
+  color: #29ABE2; 
 }
 
 .mobile-nav {
@@ -300,7 +306,7 @@ h1, h2, h3, h4, h5, h6 {
 #header.header-top h1 {
   margin-right: auto;
   font-size: 36px;
-  color: #000;  /* TITLE IN HEADER*/
+  color: #25588A;  /* TITLE IN HEADER*/
 }
 
 #header.header-top .container {
